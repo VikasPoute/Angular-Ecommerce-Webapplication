@@ -1,0 +1,91 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav h1 a {
+  color: #1b2430;
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.nav .list ul {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.nav .list li {
+  padding: 0 15px;
+}
+
+.nav .list ul li a {
+  text-decoration: none;
+  color: #1b2430;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.nav .nav-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.nav .nav-search input {
+  width: 80%;
+  margin-right: 1.5%;
+  font-size: 1rem;
+  padding-left: 10px;
+  height: 2rem;
+  border: 1px solid#1b2430;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.nav .nav-search input::placeholder {
+  font-size: 1rem;
+  padding-left: 3px;
+}
+.nav .nav-search button {
+  width: 10%;
+  height: 2rem;
+  border: 1px solid#1b2430;
+  font-size: 1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.suggested-result {
+  position: absolute;
+  display: list-item !important;
+  z-index: 10;
+  padding-bottom: 5px;
+  background-color: #ffff;
+  width: 300px;
+  left: 286px;
+  list-style: none;
+  width: 618px;
+  top: 54px;
+  text-align: left;
+  padding-left: -10px;
+  padding-left: 15px;
+}
+
+.suggested-result li a {
+  cursor: pointer;
+}

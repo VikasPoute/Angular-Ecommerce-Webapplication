@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="card" *ngIf="!showLogin">
+    <div class="card_title">
+      <h1>User Login </h1>
+      <span>Don't have an account? <a (click)="openLogin()">Register</a></span>
+    </div>
+    <div class="form">
+      <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)" autocomplete="off">
+        <input type="email" name="email" placeholder="Email" #email="ngModel" required email ngModel>
+        <input type="password" name="password" placeholder="Password" #password="ngModel" required minlength="4"
+          ngModel>
+        <button [disabled]="userLogin.invalid">Login</button>
+        <p>{{authError}}</p>
+        <p class="invalid-input"><span *ngIf="email.invalid && email.touched">Please Enter Valid Email</span></p>
+        <p class="invalid-input"><span *ngIf="password.invalid && password.touched">Please Enter Valid Password</span>
+        </p>
+      </form>
+    </div>
+  </div>
+  <div class="card" *ngIf="showLogin">
+    <div class="card_title">
+      <h1>User Sign-Up </h1>
+      <span>Already have an account? <a (click)="openSignUp()">Sign In</a></span>
+    </div>
+    <div class="form">
+      <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)" autocomplete="off">
+        <input type="text" name="username" placeholder="User Name" id="username" ngModel>
+        <input type="email" name="email" placeholder="Email" id="email" ngModel>
+        <input type="password" name="password" placeholder="Password" id="password" ngModel>
+        <button>Register</button>
+      </form>
+    </div>
+  </div>
+</div>

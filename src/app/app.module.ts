@@ -3,16 +3,50 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { SellerAuthComponent } from './seller-auth/seller-auth.component';
+import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SellerHomeComponent } from './seller-home/seller-home.component';
+import { SellerLoginComponent } from './seller-login/seller-login.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
+import { UpdateProductComponent } from './update-product/update-product.component';
+import { SearchComponent } from './search/search.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { UserAuthComponent } from './user-auth/user-auth.component';
+import { UserAuthLoginComponent } from './user-auth-login/user-auth-login.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { MyOrdersComponent } from './my-orders/my-orders.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    SellerAuthComponent,
+    HomeComponent,
+    SellerHomeComponent,
+    SellerLoginComponent,
+    SellerAddProductComponent,
+    UpdateProductComponent,
+    SearchComponent,
+    ProductDetailsComponent,
+    UserAuthComponent,
+    UserAuthLoginComponent,
+    CartPageComponent,
+    CheckoutComponent,
+    MyOrdersComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    NgbModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

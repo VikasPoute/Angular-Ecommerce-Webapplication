@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="card">
+    <div class="card_title">
+      <h1>Seller Sign-Up </h1>
+      <span>Already have an account? <a (click)="sellerLogin()">Sign In</a></span>
+    </div>
+    <div class="form">
+      <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" autocomplete="off">
+        <input type="text" name="username" id="username" placeholder="UserName" ngModel>
+        <input type="email" name="email" placeholder="Email" id="email" ngModel>
+        <input type="password" name="password" placeholder="Password" id="password" ngModel>
+        <button>Register</button>
+      </form>
+    </div>
+  </div>
+</div>

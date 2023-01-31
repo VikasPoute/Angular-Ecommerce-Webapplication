@@ -1,0 +1,48 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+thead {
+  text-transform: uppercase;
+}
+
+tr:hover {
+  background-color: #f5f8fc;
+}
+
+th,
+td {
+  padding: 1.25rem 2rem;
+  text-align: center;
+}
+
+.table__button-group {
+  visibility: hidden;
+  transition: visibility 0.06s ease-in;
+}
+.table__button-group a {
+  text-decoration: none;
+  color: #0989ab;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.table__button-group a:hover {
+  color: #0989ab;
+  opacity: 0.75;
+}
+.table__button-group a ~ a:before {
+  content: "|";
+  padding: 0 0.35rem;
+}
+
+tr:hover > td .table__button-group {
+  visibility: visible;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}

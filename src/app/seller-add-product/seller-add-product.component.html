@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card">
+    <div class="card_title">
+      <h1>Add New Products</h1>
+    </div>
+    <div class="form">
+      <form #addProduct="ngForm" (ngSubmit)="addProducts(addProduct.value)" autocomplete="off">
+        <input type="text" name="name" id="name" placeholder="Enter Product Name" [(ngModel)]="clearForm.name" ngModel>
+        <input type="text" name="price" placeholder="Enter Product Price" id="price" [(ngModel)]="clearForm.price"
+          ngModel>
+        <input type="text" name="color" placeholder="Enter Product Color" id="price" [(ngModel)]="clearForm.color"
+          ngModel>
+        <input type="text" name="category" placeholder="Enter Product Category" id="category"
+          [(ngModel)]="clearForm.category" ngModel>
+        <input type="text" name="image" placeholder="Enter Product image URL" id="image" [(ngModel)]="clearForm.image"
+          ngModel>
+        <textarea type="text" name="description" placeholder="Enter Product Description" id="description"
+          [(ngModel)]="clearForm.decription" ngModel></textarea>
+        <button>Add Product</button>
+        <p class="message"> {{addProductMessage}} </p>
+      </form>
+    </div>
+  </div>
+</div>

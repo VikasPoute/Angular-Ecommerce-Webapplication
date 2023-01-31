@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card">
+    <div class="card_title">
+      <h1>Update Product</h1>
+    </div>
+    <div class="form">
+      <form #updateProduct="ngForm" (ngSubmit)="update(updateProduct.value)" autocomplete="off">
+        <input type="text" name="name" id="name" placeholder="Enter Product Name" ngModel="{{productData?.name}}">
+        <input type="text" name="price" placeholder="Enter Product Price" id="price" ngModel="{{productData?.price}}">
+        <input type="text" name="color" placeholder="Enter Product Color" id="color" ngModel="{{productData?.color}}">
+        <input type="text" name="category" placeholder="Enter Product Category" id="category"
+          ngModel="{{productData?.category}}">
+        <input type="text" name="image" placeholder="Enter Product image URL" id="image"
+          ngModel="{{productData?.image}}">
+        <textarea type=" text" name="description" placeholder="Enter Product Description" id="description"
+          ngModel="{{productData?.description}}"></textarea>
+        <button>Update Product</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,154 @@
+{
+  "seller": [
+    {
+      "username": "vikas",
+      "email": "vikas@seller.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "username": "Adesh",
+      "email": "adesh@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "username": "Akshay",
+      "email": "akshay@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "username": "Akashay",
+      "email": "akki@gmail.com",
+      "password": "1234",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "name": "Apple iPhone 12",
+      "price": "55,999",
+      "color": "Red",
+      "category": "Mobile",
+      "image": "https://m.media-amazon.com/images/I/71E5zB1qbIL._SX679_.jpg",
+      "description": "5G",
+      "id": 1
+    },
+    {
+      "name": "Apple iPhone 12",
+      "price": "55,999",
+      "color": "Black",
+      "category": "Mobile",
+      "image": "https://m.media-amazon.com/images/I/71fVoqRC0wL._SX679_.jpg",
+      "description": "5G",
+      "id": 2
+    },
+    {
+      "name": "HP Pavilion",
+      "price": "68,999 ",
+      "color": "Natural silver",
+      "category": "Laptop",
+      "image": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/7/67U22PA-1_T1656564043.png",
+      "description": "HP Pavilion Laptop 15-eg2009TU",
+      "id": 3
+    },
+    {
+      "name": "DELL Versatile Performance",
+      "price": "33,990.02",
+      "color": "Black",
+      "category": "Laptop",
+      "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/pt-br/other/in5320nt-cnb-05000ff090-gy-fpr-cat-compare.png?$S7-png$&wid=800&hei=550&qlt=100,0&resMode=sharp2",
+      "description": "Perform personal & home office tasks\n",
+      "id": 4
+    },
+    {
+      "name": "Apple MacBook Air",
+      "price": "86,990",
+      "color": "Silver",
+      "category": "Laptop",
+      "image": "https://images-eu.ssl-images-amazon.com/images/I/71TPda7cwUL._AC_UL160_SR160,160_.jpg",
+      "description": "8GB RAM, 256GB SSD Storage",
+      "id": 6
+    },
+    {
+      "name": "Apple MacBook Pro",
+      "price": "1,81,990",
+      "color": "Space Grey",
+      "category": "Laptop",
+      "image": "https://m.media-amazon.com/images/I/61vFO3R5UNL._SX679_.jpg",
+      "description": "Apple M1 Pro chip\n",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "username": "vikas",
+      "email": "vikas@user.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "username": "1234",
+      "email": "12345",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "username": "weffgfhfgdfgdd",
+      "email": "ewfgfvdfw",
+      "password": "werwfrdsf3rwef",
+      "id": 3
+    },
+    {
+      "username": "adesh",
+      "email": "adesh@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "username": "abc",
+      "email": "abc@gmail.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "username": "aa",
+      "email": "aa@.com",
+      "password": "aaaa",
+      "id": 6
+    },
+    {
+      "email": "vikas@user.com",
+      "password": "1234",
+      "id": 7
+    }
+  ],
+  "cart": [
+    {
+      "name": "Apple iPhone 12",
+      "price": "55,999",
+      "color": "Black",
+      "category": "Mobile",
+      "image": "https://m.media-amazon.com/images/I/71fVoqRC0wL._SX679_.jpg",
+      "description": "5G",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "Apple iPhone 12",
+      "price": "55,999",
+      "color": "Red",
+      "category": "Mobile",
+      "image": "https://m.media-amazon.com/images/I/71E5zB1qbIL._SX679_.jpg",
+      "description": "5G",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 2
+    }
+  ],
+  "orders": []
+}

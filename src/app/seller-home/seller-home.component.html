@@ -1,0 +1,34 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Image</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Color</th>
+      <th scope="col">Category</th>
+      <th scope="col">Description</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of productList; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td><img src="{{item.image}}" alt=""></td>
+      <td> {{item.name}} </td>
+      <td> {{item.price}} </td>
+      <td> {{item.color}} </td>
+      <td> {{item.category}} </td>
+      <td> {{item.description}} </td>
+      <!-- <td>{{ country.area | number }}</td>
+      <td>{{ country.population | number }}</td> -->
+      <td>
+        <div class="table__button-group"><a routerLink="/seller-update-product/{{item.id}}">Update</a>
+          <a (click)="productDelete(item.id)">Delete</a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+

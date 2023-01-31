@@ -1,0 +1,12 @@
+.card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: auto;
+  background-color: #ffffff;
+  padding: 10px 30px;
+}
+
+.form button {
+  margin-bottom: 10px;
+}
